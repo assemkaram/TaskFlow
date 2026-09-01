@@ -1,0 +1,507 @@
+@media (min-width: 768px) and (max-width: 1020px) {
+    body {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .sidebar {
+        width: 70px;
+        align-items: center;
+    }
+    
+    .brand-info,
+    .quick-add,
+    .nav-item span,
+    .sidebar span,
+    .profile-info {
+        display: none;
+    }
+    
+    .nav-item {
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        text-align: center;
+        
+    }
+    
+    .search {
+        max-width: 250px;
+    }
+    
+    .brand-icon {
+        padding: 10px;
+    }
+    .profile-avatar {
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .dashboard-view {
+        padding: 24px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       My Tasks
+    ========================= */
+
+    .tasks-view {
+        padding: 24px;
+    }
+
+    .tasks-toolbar {
+        flex-direction: column;
+    }
+
+    .task-filters {
+        width: 100%;
+    }
+
+    .task-filters select {
+        flex: 1;
+    }
+
+
+    /* =========================
+       Today
+    ========================= */
+
+    .today-view {
+        padding: 24px;
+    }
+
+    .today-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       Focus
+    ========================= */
+
+    .focus-view {
+        padding: 24px;
+    }
+
+    .focus-timer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .timer-value {
+        font-size: 52px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 70px;
+        grid-template-areas: "main" "sidebar";
+    }
+
+    .brand-info,
+    .quick-add,
+    .nav-item span,
+    .sidebar span,
+    .sidebar-profile,
+    .sidebar-brand,
+    .search {
+        display: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 70px;
+    }
+
+    .sidebar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .nav-item{
+        width: 40px;
+    }
+
+    .nav-item:hover {
+        background-color: rgba(139, 92, 246, 0.12); 
+        color: #c4b5fd; 
+        transform: translateY(-5px);
+        transition: all 0.25s ease;
+    }
+
+    .sidebar {
+        border-top: 1px solid rgba(255, 255, 255, 0.118);
+        border-right: none;
+    }
+    .header-heading {
+        display: inline-block;
+        text-align: center;
+    }
+    header nav {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* =========================
+       General
+    ========================= */
+
+    .dashboard-view,
+    .tasks-view,
+    .today-view {
+        padding: 18px;
+    }
+
+
+    /* =========================
+       Dashboard
+    ========================= */
+
+    .dashboard-welcome {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .dashboard-welcome h1 {
+        font-size: 26px;
+    }
+
+    .focus-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* Stats */
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+
+    /* Dashboard panels */
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .dashboard-panel {
+        padding: 18px;
+    }
+
+
+    /* Panel Header */
+
+    .panel-header {
+        gap: 12px;
+    }
+
+    .view-all-btn {
+        white-space: nowrap;
+    }
+
+
+    /* =========================
+       My Tasks
+    ========================= */
+
+    .tasks-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .tasks-header h1 {
+        font-size: 26px;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* Toolbar */
+
+    .tasks-toolbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .task-search {
+        width: 100%;
+    }
+
+    .task-filters {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .task-filters select {
+        width: 100%;
+    }
+
+
+    /* Task Item */
+
+    .task-item {
+        display: grid;
+
+        grid-template-columns: auto 1fr auto;
+
+        gap: 10px;
+    }
+
+    .task-item-content {
+        min-width: 0;
+    }
+
+    .task-item-content h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .task-actions {
+        grid-column: 2 / 4;
+        justify-content: flex-end;
+    }
+
+
+    /* =========================
+       Today
+    ========================= */
+
+    .today-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .today-header h1 {
+        font-size: 26px;
+    }
+
+    .today-date {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Today Stats */
+
+    .today-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .today-stat {
+        padding: 16px;
+    }
+
+    .today-stat strong {
+        font-size: 22px;
+    }
+
+
+    /* Today Tasks */
+
+    .today-tasks-panel {
+        padding: 18px;
+    }
+
+    .today-task {
+        align-items: flex-start;
+    }
+
+    .today-task .task-status {
+        display: none;
+    }
+
+
+    /* =========================
+       Focus Mode
+    ========================= */
+
+    .focus-view {
+        min-height: calc(100vh - 80px);
+
+        padding: 20px 16px;
+
+        border-radius: 10px;
+    }
+
+    .focus-container {
+        min-height: calc(100vh - 160px);
+
+        gap: 30px;
+    }
+
+    .focus-timer {
+        width: 280px;
+        height: 280px;
+    }
+
+    .timer-value {
+        font-size: 46px;
+    }
+
+    .timer-status {
+        font-size: 12px;
+    }
+
+    .focus-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .focus-main-btn {
+        min-width: 0;
+        width: min(240px, 70vw);
+    }
+} 
+
+/* =====================================================
+    SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    /* =========================
+    Dashboard
+    ========================= */
+
+    .dashboard-view {
+        padding: 14px;
+    }
+
+    .dashboard-welcome h1 {
+        font-size: 23px;
+    }
+
+    .dashboard-welcome p {
+        font-size: 13px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-info h2 {
+        font-size: 22px;
+    }
+
+
+    /* =========================
+       My Tasks
+    ========================= */
+
+    .tasks-view {
+        padding: 14px;
+    }
+
+    .tasks-header h1 {
+        font-size: 23px;
+    }
+
+    .tasks-container {
+        padding: 14px;
+    }
+
+    .task-item {
+        padding: 13px;
+    }
+
+    .task-meta {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+
+    /* =========================
+       Today
+    ========================= */
+
+    .today-view {
+        padding: 14px;
+    }
+
+    .today-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .today-progress {
+        padding: 17px;
+    }
+
+    .today-tasks-panel {
+        padding: 14px;
+    }
+
+
+    /* =========================
+       Focus
+    ========================= */
+
+    .focus-view {
+        padding: 16px 10px;
+    }
+
+    .exit-focus {
+        font-size: 13px;
+    }
+
+    .focus-timer {
+        width: 240px;
+        height: 240px;
+    }
+
+    .timer-value {
+        font-size: 40px;
+    }
+
+    .timer-status {
+        font-size: 11px;
+        margin-top: 9px;
+    }
+
+    .focus-controls {
+        gap: 10px;
+    }
+
+    .focus-main-btn {
+        width: 200px;
+        padding: 13px 15px;
+        font-size: 12px;
+    }
+
+    .focus-reset-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+}
