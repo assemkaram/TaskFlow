@@ -71,6 +71,22 @@ function renderView() {
     }
 }
 
+const quickAddButton =
+    document.getElementById("quick-add");
+
+if (quickAddButton) {
+
+    quickAddButton.addEventListener(
+        "click",
+        () => {
+
+            showAddTaskModal();
+
+        }
+    );
+
+}
+
 function getTotalTasks() {
     return state.tasks.length;
 }
@@ -117,7 +133,7 @@ function getProgress() {
 }
 function getDashboardTasks() {
 
-    const today = "2026-08-24";
+    const today = getTodayDate();;
 
     return state.tasks
         .filter(task => task.dueDate === today)
@@ -386,6 +402,22 @@ if (focusButton) {
     );
 
 }
+const viewAllButton =
+    document.querySelector(".view-all-btn");
+
+if (viewAllButton) {
+
+    viewAllButton.addEventListener(
+        "click",
+        () => {
+
+            changeView("today");
+
+        }
+    );
+
+}
+
 }
 
 
