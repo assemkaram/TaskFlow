@@ -9,7 +9,7 @@
 
     border: none;
     outline: none;
-    
+
     scroll-behavior: smooth;
 }
 
@@ -456,7 +456,7 @@ header nav .new-project:active {
 }
 
 .dashboard-task:first-child .task-check {
-    border: none;
+    color: #ccc;
 }
 
 .dashboard-task:first-child .task-check i {
