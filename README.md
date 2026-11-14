@@ -1,3 +1,15 @@
+# TaskFlow
+
+A productivity management application for organizing tasks and daily activities. TaskFlow brings your tasks, priorities, and daily routines into one place, with a dashboard for an overview of your work and a focus mode for getting things done.
+
+## Features
+
+- **Task management:** Create, edit, and organize tasks and daily activities.
+- **Dashboard:** See an at-a-glance summary of your tasks and progress.
+- **Multiple views:** Switch between different ways of looking at your tasks.
+- **Task filters:** Narrow your list by status, priority, due date, and other criteria.
+- **Focus mode:** Concentrate on one task at a time with distractions minimized.
+- **Productivity tools:** Features designed to help you plan and stay on track.
 ## Tech Stack
 
 - **HTML5**: structure
